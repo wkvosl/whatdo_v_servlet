@@ -19,7 +19,7 @@ public class signUp_servlet extends HttpServlet {
   
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher("signUp.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/signUp.jsp");
 		dispatcher.forward(request, response); 
 		
 	}
@@ -59,7 +59,7 @@ public class signUp_servlet extends HttpServlet {
 		request.setAttribute("id", id);
 		request.setAttribute("email", email);
 		request.setAttribute("msg", msg);
-		dispatcher = request.getRequestDispatcher("signUp.jsp");
+		dispatcher = request.getRequestDispatcher("WEB-INF/signUp.jsp");
 		dispatcher.forward(request, response);
 	}
 }
